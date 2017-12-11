@@ -1,0 +1,13 @@
+{
+  "name": "vue-element",
+  "version": "1.0.0",
+  "description": "A Vue.js project",
+  "author": "Moon <191705595@qq.com>",
+  "private": true,
+  "scripts": {},
+  "dependencies": {},
+  "devDependencies": {
+    "node-ssh": "^4.2.3",
+    "ssh2": "^0.5.5"
+  }
+}
