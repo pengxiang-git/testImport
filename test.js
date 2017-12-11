@@ -1,3 +1,5 @@
+//https://github.com/steelbrain/node-ssh#node-ssh---ssh2-with-promises
+
 var path, node_ssh, ssh, fs
 os = require('os')
 fs = require('fs')
@@ -30,7 +32,7 @@ ssh.connect({
     username: 'root',
     privateKey: `${os.homedir()}/.ssh/id_rsa`
 }).then(function(){
-    ssh.putDirectory('../ssh', '/root/test', {
+    ssh.putDirectory('../ssh-upload', '/root/test', {
         recursive: true,
         concurrency: 10,
         validate: function(itemPath) {
